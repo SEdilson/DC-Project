@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* Geral */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+}
+
+main {
+    width: 55%;
+    margin: 0 auto;
+}
+
+section {
+    height: 15em;
+    width: 100%;
+    padding-top: 1px;
+    box-sizing: border-box;
+}
+
+section:nth-child(odd) {
+    background-color: grey;
+}
+
+section:nth-child(even) {
+    background-color: navy;
+}
+
+/* Apresentação */
+
+.presentation {
+    background: url(../assets/background-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-header {
+    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-header h1{
+    margin: .3em 0;
+}
+
+img[src="assets/menu.svg"] {
+    align-self: flex-start;
+    width: 5%;
+    margin: .3em .3em;
+}
+
+.my-photo {
+    width: 5em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6em;
+}
+
+/* Descrição */
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 3em;
+}
+
+img[src="assets/js-icon.png"] {
+    width: 20%;
+    padding-right: 1em;
+}
+
+/* Redes Sociais */
+
+.social-media {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media h2 {
+    align-self: center;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-media ul li {
+    text-decoration: none;
+    transition: .7s;
+}
+
+.social-media ul li:hover {
+    box-shadow: 0 0 3px navy;
+    border-radius: 10px;
+    transform: perspective(200px) translateZ(50px);
+}
+
+.fab {
+    font-size: 50px;
+}
+
+/* Aprendizado */
+
+.services {
+    width: 100%;
+    height: 100%;
+    height: 40em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 13em;
+    height: 45%;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  0 0 2px black;
+}
+
+.container .css,
+.javascript,
+.angular {
+    padding-top: 1em;
+}
+
+.services-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Blog */
+
+.blog {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+}
+
+.blog div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog div button {
+    width: 8em;
+    height: 3em;
+    border-radius: 30px;
+    background-color: navy;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
