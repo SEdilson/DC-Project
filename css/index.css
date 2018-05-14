@@ -190,3 +190,59 @@ img[src="assets/js-icon.png"] {
     cursor: pointer;
     box-shadow: 0 0 5px #000;
 }
+
+/* Skills */
+
+.skills {
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skills div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills div:nth-child(2) {
+    height: 8em;
+}
+
+.skills ul {
+    height: 6em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skills li {
+    list-style-type: none;
+}
+
+progress {
+    height: 1.4em;
+    width: 17em;
+}
+
+progress[value]::-webkit-progress-bar {
+    background: #cecece;
+}
+
+progress[value]::-webkit-progress-value {
+    background: #0063A3;
+}
+
+progress[value]::before {
+    content: 'HTML';
+    display: flex;
+}
+
+progress[value]::after {
+    content: '83%';
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
