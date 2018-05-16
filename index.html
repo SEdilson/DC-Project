@@ -13,14 +13,27 @@
 <body>
     <main>
         <section class="presentation">
-            <img src="assets/menu.svg" alt="Botão de menu">
+            <div class="container-pres">
+                <i class="fas fa-bars"></i>
+                <div class="menu-nav">
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#services">Social</a></li>
+                        <li><a href="#social-media">Learning</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#skills">My Skills</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container-header">
                 <img src="assets/myself.jpg" alt="Foto do criador da página" title="Minha Foto" class="my-photo">
                 <h1>Edilson Silva</h1>
                 <span>Front-End Developer</span>
+                <i class="fas fa-arrow-alt-circle-down"></i>
             </div>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me title">
                 <h2>About Me</h2>
                 <span>Algumas considerações sobre mim</span>
@@ -30,7 +43,7 @@
                 <p>Descobri o universo do desenvolvimento web a pouco mais de 5 meses e de lá pra cá venho tentando aprimorar cada vez mais meus conhecimentos nessa incrível área do desenvolvimento. Já possuo um certo domínio do HTML e do CSS, ainda venho buscando melhorar em JavaScript.</p>
             </div>
         </section>
-        <section class="social-media">
+        <section class="social-media" id="social-media">
             <h2>Social</h2>
             <div>
                 <ul>
@@ -40,8 +53,8 @@
                 </ul>
             </div>
         </section>
-        <section class="services">
-            <div class="services-title">
+        <section class="learning" id="learning">
+            <div class="learning-title">
                 <h1>Learning</h1>
                 <span>Tecnologias que venho aprendendo</span>
             </div>
@@ -90,13 +103,13 @@
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div>
                 <h1>Veja também a minha página pessoal</h1>
                 <a href="https://sedilson.github.io" target="_blank"><button>Clique Aqui!</button></a>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div>
                 <h1>My Skills</h1>
                 <span>Aqui algumas das minha habilidades</span>
@@ -104,27 +117,55 @@
 
             <div>
                 <ul>
-                    <li><br/><progress max="100" value="83"></progress></li>
-                    <li><br/><progress max="100" value="65"></progress></li>
-                    <li><br/><progress max="100" value="41"></progress></li>
+                    <li>
+                        <!--HTML5-->
+                        <p style="width:83%" data-value:"83">HTML5</p>
+                        <progress max="100" value="83" class="html5">
+                            <div class="progresso">
+                                <span style="width: 83%">83%</span>
+                            </div>
+                        </progress>
+
+                        <!--CSS-->
+                        <p style="width:65%" data-value:"65">CSS3</p>
+                        <progress max="100" value="65" class="css">
+                            <div class="progresso">
+                                <span style="width: 65%">65%</span>
+                            </div>
+                        </progress>
+
+                        <!--JavaScript-->
+                        <p style="width:38%" data-value:"38">JavaScript</p>
+                        <progress max="100" value="38" class="js-chart">
+                            <div class="progresso">
+                                <span style="width: 38%">38%</span>
+                            </div>
+                        </progress>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="contact" id="contact">
             <h1>Contato</h1>
 
             <div>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <input type="email" id="email" name="email" placeholder="seu@email.com">
-                <input type="text" id="assunto" name="assunto" placeholder="Assunto">
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
-                <input type="submit">
+                <div class="container-contact">
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+                </div>
+                <div class="message">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+                    <input type="submit">
+                </div>
             </div>
         </section>
 
-        <footer>
-           <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+       <footer>
+           
         </footer>
     </main>
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
