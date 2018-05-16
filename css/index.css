@@ -2,6 +2,11 @@
 
 /* Geral */
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -48,14 +53,47 @@ section:nth-child(even) {
     align-items: center;
 }
 
+.container-pres {
+    align-self: flex-start;
+}
+
 .container-header h1{
     margin: .3em 0;
 }
 
-img[src="assets/menu.svg"] {
+.fa-bars {
     align-self: flex-start;
-    width: 5%;
-    margin: .3em .3em;
+    font-size: 23px;
+    margin: .5em .5em;
+    cursor: pointer;
+}
+
+.menu-nav {
+    align-self: flex-start;
+    background-color: #000;
+    margin-left: .5em;
+    width: 8em;
+    display: none;
+}
+
+.menu-nav li {
+    list-style-type: none;
+}
+
+.menu-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-nav a:hover {
+    color: #65a9d7;
+}
+
+.fa-arrow-alt-circle-down {
+    align-self: center;
+    font-size: 27px;
+    margin-top: .4em;
+    cursor: pointer;
 }
 
 .my-photo {
@@ -86,7 +124,7 @@ img[src="assets/menu.svg"] {
 }
 
 img[src="assets/js-icon.png"] {
-    width: 20%;
+    width: 18%;
     padding-right: 1em;
 }
 
@@ -122,11 +160,12 @@ img[src="assets/js-icon.png"] {
 
 .fab {
     font-size: 50px;
+    color: #fff;
 }
 
 /* Aprendizado */
 
-.services {
+.learning {
     width: 100%;
     height: 100%;
     height: 40em;
@@ -160,7 +199,7 @@ img[src="assets/js-icon.png"] {
     padding-top: 1em;
 }
 
-.services-title {
+.learning-title {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -184,11 +223,18 @@ img[src="assets/js-icon.png"] {
 .blog div button {
     width: 8em;
     height: 3em;
-    border-radius: 30px;
-    background-color: navy;
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: linear-gradient(top, #000080, #65a9d7);
+    background: -webkit-linear-gradient(top, #000080, #65a9d7);
+    background: -moz-linear-gradient(top, #000080, #65a9d7);
+    background: -o-linear-gradient(top, #000080, #65a9d7);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: #fff;
-    cursor: pointer;
-    box-shadow: 0 0 5px #000;
+    font-family: 'Comorant Garamond', serif;
+    font-size: 10pt;
 }
 
 /* Skills */
@@ -222,27 +268,96 @@ img[src="assets/js-icon.png"] {
     list-style-type: none;
 }
 
-progress {
-    height: 1.4em;
-    width: 17em;
+.skills li p {
+    margin: 5px 0;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    border: none;
+    background-color: rgba(192, 192, 192, .4);
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000 inset;
+    width: 97%;
+    height: 28px;
 }
 
 progress[value]::-webkit-progress-bar {
-    background: #cecece;
+    background-color: rgba(192, 192, 192, .4);
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000 inset;
 }
 
 progress[value]::-webkit-progress-value {
-    background: #0063A3;
+    position: relative;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(left, #65a9d7, #f44);
 }
 
-progress[value]::before {
-    content: 'HTML';
+/* Contato */
+
+.contact {
     display: flex;
+    flex-direction: column;
+    height: 20em;
 }
 
-progress[value]::after {
-    content: '83%';
+.contact h1 {
+    align-self: center;
+}
+
+.contact div {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.contact .container-contact {
+    width: 46em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.container-contact input {
+    height: 2.4em;
+    width: 16em;
+    border-radius: 10%;
+}
+
+input::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 16em;
+}
+
+.message textarea {
+    width: 93%;
+}
+
+textarea::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.message input {
+    width: 8em;
+    height: 3em;
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: linear-gradient(top, #000080, #65a9d7);
+    background: -webkit-linear-gradient(top, #000080, #65a9d7);
+    background: -moz-linear-gradient(top, #000080, #65a9d7);
+    background: -o-linear-gradient(top, #000080, #65a9d7);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: #fff;
+    font-family: 'Comorant Garamond', serif;
+    font-size: 10pt;
 }
