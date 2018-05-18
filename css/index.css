@@ -11,11 +11,12 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Cormorant Garamond', serif;
+    background-color: rgba(0, 0, 128, .6);
     color: #fff;
 }
 
 main {
-    width: 55%;
+    width: 63%;
     margin: 0 auto;
 }
 
@@ -27,11 +28,17 @@ section {
 }
 
 section:nth-child(odd) {
-    background-color: grey;
+    background-color: #3f0080;
 }
 
 section:nth-child(even) {
-    background-color: navy;
+    background-color: #003f80;
+}
+
+footer {
+    background-color: #003f80;
+    text-align: center;
+    font-weight: 600;
 }
 
 /* Apresentação */
@@ -69,6 +76,7 @@ section:nth-child(even) {
 }
 
 .menu-nav {
+    position: absolute;
     align-self: flex-start;
     background-color: #000;
     margin-left: .5em;
@@ -223,12 +231,8 @@ img[src="assets/js-icon.png"] {
 .blog div button {
     width: 8em;
     height: 3em;
-    border-top: 1px solid #96d1f8;
-    background: #65a9d7;
-    background: linear-gradient(top, #000080, #65a9d7);
-    background: -webkit-linear-gradient(top, #000080, #65a9d7);
-    background: -moz-linear-gradient(top, #000080, #65a9d7);
-    background: -o-linear-gradient(top, #000080, #65a9d7);
+    border: 1px solid #96d1f8;
+    background: #000080;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
@@ -272,6 +276,21 @@ img[src="assets/js-icon.png"] {
     margin: 5px 0;
 }
 
+p[data-value="83%"]::after {
+    content: attr(data-value);
+    margin-left: 594px;
+}
+
+p[data-value="65%"]::after {
+    content: attr(data-value);
+    margin-left: 464px;
+}
+
+p[data-value="38%"]::after {
+    content: attr(data-value);
+    margin-left: 227px;
+}
+
 progress[value] {
     -webkit-appearance: none;
     border: none;
@@ -312,7 +331,6 @@ progress[value]::-webkit-progress-value {
 }
 
 .contact .container-contact {
-    width: 46em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -347,17 +365,13 @@ textarea::placeholder {
 
 .message input {
     width: 8em;
-    height: 3em;
-    border-top: 1px solid #96d1f8;
-    background: #65a9d7;
-    background: linear-gradient(top, #000080, #65a9d7);
-    background: -webkit-linear-gradient(top, #000080, #65a9d7);
-    background: -moz-linear-gradient(top, #000080, #65a9d7);
-    background: -o-linear-gradient(top, #000080, #65a9d7);
+    height: 2.5em;
+    border: 1px solid #96d1f8;
+    background: #000080;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: #fff;
     font-family: 'Comorant Garamond', serif;
-    font-size: 10pt;
+    font-size: 12pt;
 }
