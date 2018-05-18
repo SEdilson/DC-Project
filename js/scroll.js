@@ -1,7 +1,11 @@
 var scroll = document.querySelector('.fa-arrow-alt-circle-down');
+var about = document.querySelector('.about-me');
 
 scroll.addEventListener('click', () => {
 
-    window.scrollTo(0, 1000);
-    window.style.transition = '3s';
+    window.scrollTo({
+        'behavior': 'smooth',
+        'left': 0,
+        'top': about.offsetTop
+    });
 });
