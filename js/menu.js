@@ -3,5 +3,9 @@ var menu = document.querySelector('.fa-bars');
 menu.addEventListener("click", () => {
 
     var navegacao = document.querySelector('.menu-nav');
-    navegacao.style.display = 'block';
+    if(navegacao.style.display === 'none')
+        navegacao.style.display = 'block';
+    else {
+        navegacao.style.display = 'none';
+    };
 })
