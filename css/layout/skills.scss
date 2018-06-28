@@ -1,0 +1,68 @@
+/* Skills */
+
+.skills {
+    height: 17em;
+    @extend %fb-column;
+    justify-content: space-around;
+
+    ul {
+        height: 6em;
+        margin: 0 auto;
+        @extend %fb-column;
+        justify-content: space-around;        
+    }
+
+    li {
+        list-style-type: none;
+
+        p {
+            margin: 5px 0;
+        }
+    }
+}
+
+.skills div:nth-child(1) {
+    @extend %fb-column;
+    align-items: center;
+}
+
+.skills div:nth-child(2) {
+    height: 8em;
+}
+
+p[data-value="83%"]::after {
+    content: attr(data-value);
+    margin-left: 594px;
+}
+
+p[data-value="65%"]::after {
+    content: attr(data-value);
+    margin-left: 464px;
+}
+
+p[data-value="38%"]::after {
+    content: attr(data-value);
+    margin-left: 227px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    border: none;
+    background-color: rgba(192, 192, 192, .4);
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000 inset;
+    width: 97%;
+    height: 28px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgba(192, 192, 192, .4);
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000 inset;
+}
+
+progress[value]::-webkit-progress-value {
+    position: relative;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(left, #65a9d7, #f44);
+}

@@ -1,0 +1,25 @@
+/* Blog */
+
+.blog {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+
+    div {
+        @extend %fb-column;
+        align-items: center;
+    }
+
+    button {
+        width: 8em;
+        height: 3em;
+        border: 1px solid #96d1f8;
+        background: #000080;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+        text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+        color: #fff;
+        font-family: 'Comorant Garamond', serif;
+        font-size: 10pt;    
+    }
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* Descrição */
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 3em;
+}
+
+img[src="assets/js-icon.png"] {
+    width: 18%;
+    padding-right: 1em;
+}

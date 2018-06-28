@@ -1,0 +1,59 @@
+/* Contato */
+
+.contact {
+    @extend %fb-column;
+    height: 20em;
+
+    h1 {
+        align-self: center;
+    }
+
+    div {
+        @extend %fb-column;
+    }
+
+    .container-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        
+        input {
+            height: 2.4em;
+            width: 16em;
+            border-radius: 10%;
+        }
+    }
+}
+
+input::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.message {
+    @extend %fb-column;
+    align-items: center;
+    justify-content: space-around;
+    height: 16em;
+
+    textarea {
+        width: 93%;
+    }
+
+    input {
+        width: 8em;
+        height: 2.5em;
+        border: 1px solid #96d1f8;
+        background: #000080;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+        text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+        color: #fff;
+        font-family: 'Comorant Garamond', serif;
+        font-size: 12pt;        
+    }
+}
+
+textarea::placeholder {
+    font-family: 'Cormorant Garamond', serif;
+}

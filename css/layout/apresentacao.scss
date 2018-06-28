@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* Apresentação */
+
+.presentation {
+    background: url(../assets/background-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    @extend %fb-column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-header {
+    margin-bottom: 65px;
+    @extend %fb-column;
+    align-items: center;
+}
+
+.container-pres {
+    @extend %alinhamento-proprio;
+}
+
+.container-header h1{
+    margin: .3em 0;
+}
+
+.fa-bars {
+    @extend %alinhamento-proprio;
+    font-size: 23px;
+    margin: .5em .5em;
+    cursor: pointer;
+}
+
+.menu-nav {
+    position: absolute;
+    @extend %alinhamento-proprio;
+    background-color: #000;
+    margin-left: .5em;
+    width: 8em;
+    display: none;
+
+    li{
+        list-style-type: none;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #65a9d7;
+    }
+}
+
+.fa-arrow-alt-circle-down {
+    align-self: center;
+    font-size: 27px;
+    margin-top: .4em;
+    cursor: pointer;
+}
+
+.my-photo {
+    width: 5em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff;
+}
+
+.about-me {
+    @extend %fb-column;
+}
+
+.title {
+    @extend %fb-column;
+    align-items: center;
+    height: 6em;
+}

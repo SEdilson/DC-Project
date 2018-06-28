@@ -1,0 +1,40 @@
+/* Aprendizado */
+
+.learning {
+    width: 100%;
+    height: 100%;
+    height: 40em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 13em;
+    height: 45%;
+    text-align: center;
+    box-sizing: border-box;
+    @extend %fb-column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  0 0 2px black;
+}
+
+.container .css,
+.javascript,
+.angular {
+    padding-top: 1em;
+}
+
+.learning-title {
+    width: 100%;
+    @extend %fb-column;
+    align-items: center;
+}
